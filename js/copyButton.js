@@ -27,3 +27,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const nav = document.querySelector('.nav')
+const navButton = document.querySelector('.nav-menu-button')
+const navCloseButton = document.querySelector('.nav-menu-button-close')
+const navList = document.querySelector('.nav-list')
+const navListItems = document.querySelectorAll('.nav-list-item')
+navButton.addEventListener('click', () => {
+    navList.classList.contains('show-nav-list') ? navList.classList.remove('show-nav-list') : navList.classList.add('show-nav-list')
+    navButton.style.display = "none"
+    navCloseButton.style.display = "flex"
+    nav.style.width = "100%"
+    nav.style.backgroundColor = "black"
+})
+
+navCloseButton.addEventListener('click', () => {
+    navList.classList.remove('show-nav-list')
+    navButton.style.display = "block"
+    navCloseButton.style.display = "none"
+    nav.style.width = "fit-content"
+    nav.style.backgroundColor = "transparent"
+})
+
+navListItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navList.classList.remove('show-nav-list')
+        navButton.style.display = "block"
+        navCloseButton.style.display = "none"
+        nav.style.width = "fit-content"
+        nav.style.backgroundColor = "transparent"
+    })
+})
