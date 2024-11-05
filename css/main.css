@@ -380,3 +380,21 @@ section {
     -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
+.divan-sostav-list {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.divan-sostav-list-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.divan-sostav-list-item span {
+    display: block;
+    width: 200px;
+    font-size: 20px;
+}
