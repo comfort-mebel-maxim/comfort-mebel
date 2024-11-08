@@ -441,7 +441,7 @@ section {
     .button-copy {
         margin: 0;
     }
-    
+
     .container {
         width: 400px;
     }
@@ -451,7 +451,7 @@ section {
     }
 
     .example-image {
-        width: 80%;
+        width: 100%;
     }
 
     .list {
