@@ -232,7 +232,7 @@ section {
 .list-item_tovars-img {
     display: block;
     width: 100%;
-    height: 75%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -397,4 +397,122 @@ section {
     display: block;
     width: 200px;
     font-size: 20px;
+}
+
+.list-center {
+    margin: 0 auto;
+}
+
+.list-center span {
+    width: 50%;
+}
+
+#divan-sizes .list {
+    width: 70%;
+}
+
+#divan-sizes .list-item-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#divan-sizes .list-item {
+    flex-direction: column;
+    height: fit-content;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#divan-sizes span {
+    display: block;
+    width: 50%;
+}
+
+.divan-sizes-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 540px) {
+
+    .button-copy {
+        margin: 0;
+    }
+    
+    .container {
+        width: 400px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .example-image {
+        width: 80%;
+    }
+
+    .list {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .list-center span {
+        margin-right: 10px;
+    }
+
+    .list-dostavka .list-item {
+        width: 45%;
+        text-align: center;
+    }
+
+    .divan-sizes-list__item {
+        flex-direction: column;
+    }
+
+    #divan-sizes span {
+        width: 95%;
+    }
+
+    #divan-sizes span:first-child {
+        margin-bottom: 10px;
+    }
+
+    .list-item_tovars {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        width: 32%;
+    }
+
+    .nav-list-item {
+        height: 60px;
+    }
+
+    .nav-list-link {
+        padding: 10px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.3);
+        -moz-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.3);
+        box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.3);
+    }
+
+    header {
+        height: 100px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        width: 330px;
+    }
 }
